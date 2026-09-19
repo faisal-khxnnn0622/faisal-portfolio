@@ -1482,3 +1482,36 @@ a {
     border-color: rgba(139, 92, 246, 0.5);
     background: rgba(139, 92, 246, 0.05);
 }
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.contact-item > i {
+    font-size: 22px;
+}
+
+.contact-item h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
