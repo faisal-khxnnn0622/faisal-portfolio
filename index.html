@@ -1,66 +1,99 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Faisal.Devs </title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
+    <title>Faisal.dev</title>
+    <link rel="icon" type="image/png" href="faviconn.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-            <div class="logo">
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
                 FAISAL<span>.</span>
-            </div>
+            </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav class="nav-links">
 
-        </nav>
+                <a href="#home" class="active">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#skills">Skills</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#journey">Journey</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
     </header>
 
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- =====================================================
+         HOME / HERO
+    ====================================================== -->
+
+    <section id="home" class="hero section">
 
         <div class="hero-content">
 
-            <p class="small-text">HELLO, I'M</p>
+            <p class="hero-intro">
+                HEY, I'M FAISAL 👋
+            </p>
 
-            <h1>Faisal Khan</h1>
+            <h1>
+                I BUILD.<br>
+                <span>I LEARN.</span><br>
+                I CREATE.
+            </h1>
 
-            <h2>
-                AIML Student &amp;
-                <span>Aspiring AI Engineer</span>
-            </h2>
+            <div class="typing-wrapper">
+
+                <span>I'm </span>
+
+                <span id="typing-text">
+                    a Tech Enthusiast
+                </span>
+
+                <span class="typing-cursor">|</span>
+
+            </div>
 
             <p class="hero-description">
-                I’m a first-year Artificial Intelligence and Machine Learning
-                student passionate about programming, building projects,
-                and learning how intelligent and AI systems work.
+                AIML student and a Web developer who is passionate about building projects,
+                learning new technologies and turning ideas into reality.
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">
-                    View My Projects
+
+                <a href="#projects" class="primary-btn">
+                    View My Projects →
                 </a>
 
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
+                <a href="#contact" class="secondary-btn">
+                    Let's Work Together
                 </a>
+
             </div>
 
         </div>
@@ -68,39 +101,44 @@
     </section>
 
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
 
-        <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
-        </div>
+    <section id="about" class="section about-section">
 
-        <div class="about-content">
+        <div class="section-container">
 
-            <div class="about-text">
+            <div class="section-heading">
+
+                <p class="section-label">
+                    GET TO KNOW ME
+                </p>
+
+                <h2>
+                    About Me
+                </h2>
+
+            </div>
+
+
+            <div class="about-content">
 
                 <p>
-                    I’m Faisal, an AIML student currently building my
-                    foundation in programming and software development.
+                    I'm Faisal, an AIML student currently building
+                    my foundation in AI software development,Machine Learning.
                 </p>
 
                 <p>
-                    <p>
-    I’m currently learning NumPy, Pandas, Matplotlib, Machine Learning
-    fundamentals, Statistics and Probability while working on
-    real-world projects.
-</p>
-
-<p>
-    My long-term goal is to become an AI/ML engineer and build useful
-    technology that solves real-world problems.
-</p>
+                    I'm currently learning Machine Learning fundamentals, Statistics and
+                    Probability while working on real-world projects.
+                    Im also building projects in web deveplopment.
                 </p>
 
                 <p>
                     My long-term goal is to become an AI/ML engineer
-                    and build useful technology that solves real problems.
+                    and build useful technology that solves real-world
+                    problems.
                 </p>
 
             </div>
@@ -110,54 +148,151 @@
     </section>
 
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
 
-        <div class="section-title">
-            <p>WHAT I'M LEARNING</p>
-            <h2>Skills</h2>
-        </div>
+    <section id="skills" class="section skills-section">
 
-        <div class="skills-container">
+        <div class="section-container">
 
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Programming &amp; problem solving</p>
+            <div class="section-heading">
+
+                
+
+                <h2>
+                    Skills
+                </h2>
+
             </div>
 
-            <div class="skill-card">
-                <h3>C</h3>
-                <p>Programming fundamentals</p>
-            </div>
 
-            <div class="skill-card">
-                <h3>HTML &amp; CSS</h3>
-                <p>Web development</p>
-            </div>
+            <!-- SKILL CARDS -->
 
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Web interactions</p>
-            </div>
+            <div class="skills-grid">
 
-            <div class="skill-card">
-                <h3>Flask</h3>
-                <p>Python web development</p>
-            </div>
 
-            <div class="skill-card">
-                <h3>Firebase</h3>
-                <p>Database &amp; backend services</p>
-            </div>
+                <!-- Python -->
 
-            <div class="skill-card">
-                <h3>Git &amp; GitHub</h3>
-                <p>Version control</p>
-            </div>
+                <div class="skill-card">
 
-            <div class="skill-card">
-                <h3>AI / ML</h3>
-                <p>Currently learning</p>
+                    <h3>
+                        Python
+                    </h3>
+
+                    <p>
+                        Programming & problem solving
+                    </p>
+
+                </div>
+
+
+                <!-- C -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        C
+                    </h3>
+
+                    <p>
+                        Programming fundamentals
+                    </p>
+
+                </div>
+
+
+                <!-- HTML -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        HTML
+                    </h3>
+
+                    <p>
+                        Web development structure
+                    </p>
+
+                </div>
+
+
+                <!-- CSS -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        CSS
+                    </h3>
+
+                    <p>
+                        Web design & styling
+                    </p>
+
+                </div>
+
+
+                <!-- JavaScript -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Web interactions & functionality
+                    </p>
+
+                </div>
+
+
+                <!-- Flask -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Flask
+                    </h3>
+
+                    <p>
+                        Python web development
+                    </p>
+
+                </div>
+
+
+                <!-- Firebase -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Firebase
+                    </h3>
+
+                    <p>
+                        Database & backend services
+                    </p>
+
+                </div>
+
+
+            
+
+                <!-- Git & GitHub -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Git & GitHub
+                    </h3>
+
+                    <p>
+                        Version control & project management
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
@@ -165,242 +300,596 @@
     </section>
 
 
+    <!-- =====================================================
+         STATS
+    ====================================================== -->
 
-<!-- Projects Section -->
-<section id="projects" class="section">
+    <section id="stats" class="stats-section">
 
-    <div class="section-title">
-        <p>WHAT I'VE BUILT</p>
-        <h2>Projects</h2>
-    </div>
+        <div class="stats-container">
 
-    <div class="projects-container">
 
-        <!-- Project 01 -->
-        <div class="project-card">
+            <div class="stat-card">
 
-            <div class="project-number">
-                01
+                <span class="stat-number">
+                    02+
+                </span>
+
+                <span class="stat-label">
+                    Major Projects
+                </span>
+
             </div>
 
-            <h3>Expense Calculator Management System</h3>
+
+            <div class="stat-card">
+
+                <span class="stat-number">
+                    07+
+                </span>
+
+                <span class="stat-label">
+                    Minor projects
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-number">
+                    05+
+                </span>
+
+                <span class="stat-label">
+                    Technologies
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-number">
+                    ∞
+                </span>
+
+                <span class="stat-label">
+                    Ideas To Build
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section id="projects" class="section projects-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    WHAT I'VE BUILT
+                </p>
+
+                <h2>
+                    Projects
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 01 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Expense Calculator
+                        Management System
+                    </h3>
+
+                    <p>
+                        A web-based expense management system
+                        designed to calculate, organize and manage
+                        personal expenses through a simple and
+                        user-friendly interface.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>Firebase</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 02 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Railway Ticket
+                        Reservation System
+                    </h3>
+
+                    <p>
+                        A full-stack railway ticket reservation
+                        website featuring train search, seat
+                        selection, booking, cancellation and
+                        ticket management.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+
+                        <span>Flask</span>
+
+                        <span>Firebase</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         JOURNEY
+    ====================================================== -->
+
+    <section id="journey" class="section journey-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    MY JOURNEY
+                </p>
+
+                <h2>
+                    Learning Journey
+                </h2>
+
+            </div>
+
+
+            <div class="journey-timeline">
+
+
+                <!-- STEP 01 -->
+
+                <div class="journey-item">
+
+                    <span class="journey-number">
+                        01
+                    </span>
+
+                    <div class="journey-content">
+
+                        <h3>
+                            Mastering Programming Languages
+                        </h3>
+
+                        <p>
+                             Python,C and problem solving.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 02 -->
+
+                <div class="journey-item">
+
+                    <span class="journey-number">
+                        02
+                    </span>
+
+                    <div class="journey-content">
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            Learned HTML, CSS, JavaScript, Flask
+                            and Firebase(database) and building real projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 03 -->
+
+                <div class="journey-item">
+
+                    <span class="journey-number">
+                        03
+                    </span>
+
+                    <div class="journey-content">
+
+                        <h3>
+                            AI & Machine Learning
+                        </h3>
+
+                        <p>
+                            Developing foundations in NumPy, Pandas,
+                            Matplotlib, Statistics, Probability and
+                            Machine Learning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STEP 04 -->
+
+                <div class="journey-item">
+
+                    <span class="journey-number">
+                        04
+                    </span>
+
+                    <div class="journey-content">
+
+                        <h3>
+                            Building Real Projects
+                        </h3>
+
+                        <p>
+                            Turning what I learn into practical
+                            projects and continuously improving my skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+
+    <section id="services" class="section services-section">
+
+        <div class="section-container">
+
+            <div class="services-intro">
+
+                <p class="section-label">
+                    WHAT I CAN BUILD
+                </p>
+
+                <h2>
+                    Websites
+                    <br>
+                    <span>for Your Business?</span>
+                </h2>
+
+                <p>
+                    I can build modern, responsive and user-friendly
+                    websites for businesses, startups, personal brands
+                    and small projects. From simple business websites
+                    to custom web solutions, I can help turn your idea
+                    into a working website.
+                </p>
+
+            </div>
+
+
+            <!-- SERVICE CARDS -->
+
+            <div class="service-list">
+
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+                        🌐
+                    </div>
+
+                    <h3>
+                        Business Websites
+                    </h3>
+
+                    <p>
+                        Professional websites to showcase your
+                        business and build an online presence.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Responsive Design
+                    </h3>
+
+                    <p>
+                        Websites that work smoothly across phones,
+                        tablets and laptops.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Custom Projects
+                    </h3>
+
+                    <p>
+                        Custom web projects designed around your
+                        idea, business or project requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+                        🚀
+                    </div>
+
+                    <h3>
+                        Startup Websites
+                    </h3>
+
+                    <p>
+                        Modern websites for startups and new
+                        ideas looking to establish an online presence.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+                        👤
+                    </div>
+
+                    <h3>
+                        Personal Websites
+                    </h3>
+
+                    <p>
+                        Clean personal websites and portfolios
+                        designed to showcase your work and skills.
+                    </p>
+
+                </div>
+
+
+                <div class="service-item">
+
+                    <div class="service-icon">
+                        ✨
+                    </div>
+
+                    <h3>
+                        Modern UI Design
+                    </h3>
+
+                    <p>
+                        Clean and modern interfaces focused on
+                        usability and visual experience.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CONTACT CTA -->
+
+            <div class="services-cta">
+
+                <a href="#contact" class="contact-btn">
+                    Contact Me →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="section-container">
+
+            <div class="contact-heading">
+
+                <p class="section-label">
+                    LET'S CONNECT
+                </p>
+
+                <h2>
+                    Contact Me
+                </h2>
+
+                <p>
+                    Want to connect, collaborate or just say hello?
+                    Feel free to reach out through any of the
+                    platforms below.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+
+            <a href="mailto:faisal.khaan2008@gmail.com" class="contact-card email-card">
+    <h3>📧 Email</h3>
+    <p>faisal.khaan2008@gmail.com</p>
+</a>
+
+                <!-- GITHUB -->
+
+                <a
+                    href="https://github.com/faisal-khxnnn0622"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <h3>
+                        💻 Github
+                    </h3>
+
+                    <p>
+                        Faisalkhann0622
+                    </p>
+
+                </a>
+
+
+                <!-- PHONE -->
+
+                <a
+                    href="tel:YOUR_PHONE_NUMBER"
+                    class="contact-card"
+                >
+
+                    <h3>
+                        📱 Phone
+                    </h3>
+
+                    <p>
+                        +91 8179214186
+                    </p>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a
+                    href="https://www.linkedin.com/in/faisal-khan-47a204420?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <h3>
+                        💼 LinkedIn
+                    </h3>
+
+                    <p>
+                        Faisal khan
+                    </p>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
 
             <p>
-                A web-based expense management system designed to
-                calculate, organize and manage personal expenses
-                through a simple and user-friendly interface.
+                © 2026 Faisal. Built with curiosity & code.
             </p>
-
-            <div class="project-tech">
-                <span>Python</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Firebase</span>
-            </div>
-
-            <div class="project-links">
-
-                <!-- Expense Calculator GitHub -->
-                <a href="https://github.com/faisal-khxnnn0622/Expense-calculator-management-system"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub
-                </a>
-
-                <!-- Live Demo - Add later -->
-                <a href="#" target="_blank">
-                    Live Demo
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- Project 02 -->
-        <div class="project-card">
-
-            <div class="project-number">
-                02
-            </div>
-
-            <h3>Railway Ticket Reservation System</h3>
 
             <p>
-                A full-stack railway ticket reservation website
-                featuring train search, seat selection, booking,
-                cancellation and ticket management.
+                AIML Student • Developer • Learner
             </p>
 
-            <div class="project-tech">
-                <span>Python</span>
-                <span>Flask</span>
-                <span>Firebase</span>
-                <span>JavaScript</span>
-                <span>HTML/CSS</span>
-            </div>
-
-            <div class="project-links">
-
-                <!-- Railway GitHub -->
-                <a href="https://github.com/faisal-khxnnn0622/railway-ticket-reservation-system"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub
-                </a>
-
-                <!-- Live Demo - Add later -->
-                <a href="#" target="_blank">
-                    Live Demo
-                </a>
-
-            </div>
-
         </div>
-
-    </div>
-
-</section>
-
-    <!-- Journey Section -->
-    <section id="journey" class="section">
-
-        <div class="section-title">
-            <p>MY ROADMAP</p>
-            <h2>My Journey</h2>
-        </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <span>2026</span>
-                <h3>Started AIML Engineering</h3>
-                <p>
-                    Beginning my engineering journey and building
-                    strong programming fundamentals.
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <span>2026</span>
-                <h3>Programming &amp; Projects</h3>
-                <p>
-                    Mastering Python, C, web development and building AI related
-                    real-world projects.
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <span>Future</span>
-                <h3>Machine Learning</h3>
-                <p>
-                    Moving into data science, machine learning,
-                    deep learning and AI.
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <span>Goal</span>
-                <h3>AI/ML Engineer</h3>
-                <p>
-                    Become a skilled AI engineer and work on
-                    meaningful real-world AI systems.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-<!-- Contact Section -->
-<section id="contact" class="section contact-section">
-
-    <div class="section-title">
-        <p>LET'S CONNECT</p>
-        <h2>Contact Me</h2>
-    </div>
-
-    <p class="contact-text">
-        Want to connect, collaborate or just say hello?
-        Feel free to reach out through any of the platforms below.
-    </p>
-
-    <div class="contact-links">
-
-        <!-- Email -->
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=faisal.khaan2008@gmail.com"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <strong>📧 Email</strong>
-            <span>faisal.khaan2008@gmail.com</span>
-
-        </a>
-
-
-        <!-- GitHub -->
-        <a href="https://github.com/faisal-khxnnn0622"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <strong>💻 GitHub</strong>
-            <span>faisal-khxnnn0622</span>
-
-        </a>
-
-
-        <!-- Phone -->
-        <a href="tel:+918179214186">
-
-            <strong>📱 Phone</strong>
-            <span>+91 8179214186</span>
-
-        </a>
-
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/faisal-khan-47a204420"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <strong>💼 LinkedIn</strong>
-            <span>faisal-khan</span>
-
-        </a>
-
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/faisall.__.06"
-           target="_blank"
-           rel="noopener noreferrer">
-
-            <strong>📸 Instagram</strong>
-            <span>faisall.__.06</span>
-
-        </a>
-
-    </div>
-
-</section>
-
-
-
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 Faisal Khan. Built with code &amp; curiosity.
-        </p>
 
     </footer>
 
 
+    <!-- =====================================================
+         CUSTOM CURSOR
+    ====================================================== -->
+
+    <div class="custom-cursor"></div>
+
+    <div class="cursor-ring"></div>
+
+
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
 
 </body>
-</html>
 
+</html>
